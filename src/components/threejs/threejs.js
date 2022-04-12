@@ -3,6 +3,7 @@ import { Torus } from "./torus";
 import { Lighting } from "./lighting";
 import { softShadows, OrbitControls } from "@react-three/drei";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 softShadows();
 
@@ -12,7 +13,9 @@ export function ThreeJS() {
 			<>
 				<div className="landing">
 					<h1>Liam Curran | Full Stack Software Developer</h1>
-					<Button variant="outlined">Enter</Button>
+					<Button variant="outlined">
+						<Link to={`projects`}>Enter</Link>
+					</Button>
 				</div>
 			</>
 			<Canvas shadows camera={{ position: [-5, 3, 15], fov: 60 }}>
@@ -44,7 +47,7 @@ export function ThreeJS() {
 					/>
 					<Torus
 						position={[5, 1, -2]}
-						color="hotlink"
+						color="hotpink"
 						args={[0.75, 0.3, 30, 150]}
 						speed={0.6}
 						factor={6}
