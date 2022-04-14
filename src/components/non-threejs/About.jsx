@@ -1,9 +1,7 @@
-import Button from "@mui/material/Button";
-
 export default function About() {
 	return (
-		<div className="About">
-			<p className="about-text">
+		<div className="about">
+			<p>
 				After graduating from The University of Manchester in 2019 I got to work
 				as an Environmental Planner. I enjoyed aspects of the work but overall I
 				didn't find it engaging or particularly rewarding. <br></br>
@@ -26,15 +24,14 @@ export default function About() {
 				amount of tech that the great tutors at Northcoders put us onto and I'm
 				looking forwards to continuing to progress my personal knowledge.
 			</p>
-			<Button
-				variant="outlined"
+			<a
 				href="https://drive.google.com/file/d/1PmISGsnBECadqG_JNU0IbN1QnBdKU1Hh/view?usp=sharing"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="CV-button"
+				className="button-54"
 			>
 				CV
-			</Button>
+			</a>
 		</div>
 	);
 }

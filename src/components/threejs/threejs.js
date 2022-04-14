@@ -38,9 +38,9 @@ export function ThreeJS() {
 					<h1 className="welcome-text">
 						Liam Curran <br></br>Software Developer
 					</h1>
-					<Button variant="outlined">
+					<button type="button" className="button-54">
 						<Link to={`about`}>Enter</Link>
-					</Button>
+					</button>
 				</div>
 			</>
 			<Button

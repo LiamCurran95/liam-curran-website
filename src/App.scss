@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+a:visited,
+a:link,
+a:active,
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
 @font-face {
 	font-family: "Druk Wide Bold";
 	src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot");
@@ -29,9 +37,8 @@ body,
 }
 
 body {
-	background-color: #121212;
-	// background-color: white;
-
+	// background-color: #121212;
+	background-color: white;
 	position: fixed;
 }
 
@@ -48,8 +55,9 @@ body {
 	border-top: 2px solid black;
 	h1 {
 		font-family: Druk Wide Bold;
-		color: white;
-		text-decoration: dashed;
+	}
+	.button-54 {
+		align-items: center;
 	}
 }
 
@@ -131,14 +139,11 @@ body {
 	}
 }
 
-.CV-button {
-	width: 25%;
-	left: 37.5%;
-	right: 37.5%;
-}
-
-.about-text {
+.about {
 	padding: 1em;
+	p {
+		font-size: 14px;
+	}
 }
 
 .Navbar {
@@ -155,10 +160,15 @@ body {
 		flex-direction: column;
 		justify-content: left;
 		align-items: flex-start;
-		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.hamburger-menu-content:hover {
+		background-color: rgb(255, 255, 255);
+		border: 3px solid;
 	}
 	.drop-content #show {
 		padding: 0.1rem;
+		background-color: rgb(255, 255, 255);
+		border: 3px solid;
 	}
 	#hide,
 	.hide {
@@ -168,4 +178,23 @@ body {
 	.show {
 		display: block;
 	}
+}
+
+.button-54 {
+	font-family: Druk Wide Bold;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+		5px 5px 0px 0px;
+	position: relative;
+	touch-action: manipulation;
+}
+
+.button-54:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
 }
