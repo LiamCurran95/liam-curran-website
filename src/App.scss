@@ -29,7 +29,9 @@ body,
 }
 
 body {
-	background-color: #f1f4f8;
+	background-color: #121212;
+	// background-color: white;
+
 	position: fixed;
 }
 
@@ -44,10 +46,11 @@ body {
 	font-size: 14px;
 	background-color: transparent;
 	border-top: 2px solid black;
-}
-
-.landing h1 {
-	font-family: Druk Wide Bold;
+	h1 {
+		font-family: Druk Wide Bold;
+		color: white;
+		text-decoration: dashed;
+	}
 }
 
 .color-change-button {
@@ -59,27 +62,35 @@ body {
 	left: 1rem;
 }
 
+.contact {
+	p {
+		font-size: 12px;
+	}
+}
 .linkedin-icon {
 	height: 30px;
 	width: 30px;
 }
-.github-repo-icon-header {
-	height: 30px;
-	width: 30px;
-	position: absolute;
-	right: 3rem;
-}
-.linkedin-icon-header {
-	height: 30px;
-	width: 30px;
-	position: absolute;
-	right: 6rem;
-}
-.CV-icon-header {
-	height: 30px;
-	width: 30px;
-	position: absolute;
-	right: 9rem;
+
+.navbar-icons {
+	.github-icon-header {
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		right: 3rem;
+	}
+	.linkedin-icon-header {
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		right: 6rem;
+	}
+	.CV-icon-header {
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		right: 9rem;
+	}
 }
 
 .project-page-intro {

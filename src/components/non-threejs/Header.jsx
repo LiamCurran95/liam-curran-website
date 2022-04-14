@@ -6,7 +6,7 @@ export default function Header() {
 
 	return (
 		<header>
-			<h1 className="Navbar" alt="Navigation menu">
+			<div className="Navbar" alt="Navigation menu">
 				<button
 					className="hamburger-menu-button"
 					onMouseEnter={() => {
@@ -15,7 +15,6 @@ export default function Header() {
 				>
 					☰
 				</button>
-
 				<section
 					className="hamburger-menu-content"
 					onMouseLeave={() => {
@@ -63,42 +62,44 @@ export default function Header() {
 						Contact
 					</Link>
 				</section>
-				<a
-					href={"https://github.com/liamcurran95"}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-						className="github-repo-icon-header"
-						alt="github link"
-					/>
-				</a>
-				<a
-					href={"https://www.linkedin.com/in/liamcurran1995/"}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
-						className="linkedin-icon-header"
-						alt="linkedin link"
-					/>
-				</a>
-				<a
-					href={
-						"https://drive.google.com/file/d/1PmISGsnBECadqG_JNU0IbN1QnBdKU1Hh/view?usp=sharing"
-					}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<img
-						src="https://freepngimg.com/download/resume/9-2-resume-picture.png"
-						className="CV-icon-header"
-						alt="CV link"
-					/>
-				</a>
-			</h1>
+				<div className="navbar-icons">
+					<a
+						href={"https://github.com/liamcurran95"}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+							className="github-icon-header"
+							alt="github link"
+						/>
+					</a>
+					<a
+						href={"https://www.linkedin.com/in/liamcurran1995/"}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+							className="linkedin-icon-header"
+							alt="linkedin link"
+						/>
+					</a>
+					<a
+						href={
+							"https://drive.google.com/file/d/1PmISGsnBECadqG_JNU0IbN1QnBdKU1Hh/view?usp=sharing"
+						}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="https://freepngimg.com/download/resume/9-2-resume-picture.png"
+							className="CV-icon-header"
+							alt="CV link"
+						/>
+					</a>
+				</div>
+			</div>
 		</header>
 	);
 }
