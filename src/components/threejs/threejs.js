@@ -14,7 +14,7 @@ export function ThreeJS() {
 				<div className="landing">
 					<h1>Liam Curran | Full Stack Software Developer</h1>
 					<Button variant="outlined">
-						<Link to={`projects`}>Enter</Link>
+						<Link to={`about`}>Enter</Link>
 					</Button>
 				</div>
 			</>
