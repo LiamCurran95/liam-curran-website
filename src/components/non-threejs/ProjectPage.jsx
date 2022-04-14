@@ -26,16 +26,18 @@ export default function ProjectPage() {
 		<>
 			<div className="project-page-intro">
 				<h1>Projects</h1>
-				<h3>
+				<p>
 					Here you can view some projects that I have completed, this page uses
 					the GitHub API to view my 'starred' projects and will continue to
 					update as I further develop my portfolio, so come back soon!
-				</h3>
+				</p>
 			</div>
 			<div className="project-cards">
 				{data.map((project, index) => {
 					return (
-						<ProjectCard project={project} loading={isLoading} key={index} />
+						<div className="project-card-map">
+							<ProjectCard project={project} loading={isLoading} key={index} />
+						</div>
 					);
 				})}
 			</div>

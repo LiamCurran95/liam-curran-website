@@ -4,21 +4,58 @@ import { Lighting } from "./lighting";
 import { softShadows, OrbitControls } from "@react-three/drei";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 softShadows();
 
 export function ThreeJS() {
+	const [color, setColor] = useState([
+		"mediumturquoise",
+		"purple",
+		"purple",
+		"purple",
+		"purple",
+		"hotpink",
+		"hotpink",
+	]);
+
+	const randomColor = () => {
+		let colorArr = [];
+
+		const colorGenerator = () => {
+			return Math.floor(Math.random() * 16777215).toString(16);
+		};
+		colorArr.push(`#${colorGenerator()}`);
+		colorArr.push(`#${colorGenerator()}`);
+		colorArr.push(`#${colorGenerator()}`);
+		return colorArr;
+	};
+
 	return (
 		<>
 			<>
 				<div className="landing">
-					<h1>Liam Curran | Full Stack Software Developer</h1>
+					<h1 className="welcome-text">
+						Liam Curran <br></br>Software Developer
+					</h1>
 					<Button variant="outlined">
 						<Link to={`about`}>Enter</Link>
 					</Button>
 				</div>
 			</>
-			<Canvas shadows camera={{ position: [-5, 3, 15], fov: 60 }}>
+			<Button
+				variant="outlined"
+				onClick={() => {
+					setColor(randomColor());
+				}}
+				className="color-change-button"
+			>
+				Change Colors
+			</Button>
+			{/* //ADD IN WIREFRAME / SPEED ETC. */}
+
+			<Canvas shadows camera={{ position: [0, 3, 5], fov: 60 }}>
+				{/* <color attach="background" args={["blue"]} /> */}
 				<Lighting />
 				<group>
 					<mesh
@@ -31,27 +68,28 @@ export function ThreeJS() {
 					</mesh>
 					<Torus
 						position={[0, 1, 0]}
-						color="mediumturquoise"
+						color={color[0]}
 						args={[1, 0.3, 30, 150]}
 						speed={0.6}
 						factor={3}
+						wireframe={false}
+					/>
+					<Torus
+						position={[3, 1, 0]}
+						color={color[1]}
+						args={[0.75, 0.3, 30, 150]}
+						speed={0.6}
+						factor={6}
 						wireframe={true}
 					/>
+
 					<Torus
-						position={[-2, 1, -5]}
-						color="purple"
+						position={[-3, 1, 0]}
+						color={color[2]}
 						args={[0.75, 0.3, 30, 150]}
 						speed={0.6}
 						factor={6}
-						wireframe={false}
-					/>
-					<Torus
-						position={[5, 1, -2]}
-						color="hotpink"
-						args={[0.75, 0.3, 30, 150]}
-						speed={0.6}
-						factor={6}
-						wireframe={false}
+						wireframe={true}
 					/>
 				</group>
 				<OrbitControls />

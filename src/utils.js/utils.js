@@ -215,4 +215,7 @@ export function projectTech(project) {
 	if (project.name === "Vested-Front-End") {
 		return ["JavaScript", "React", "Axios", "Heroku", "MUI", "VISX", "Netlify"];
 	}
+	if (project.name === "liam-curran-website") {
+		return ["JavaScript", "React", "Axios", "MUI", "three.js"];
+	}
 }
