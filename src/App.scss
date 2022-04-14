@@ -9,6 +9,7 @@ body,
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	overflow-y: auto;
 }
 
 body {
@@ -27,4 +28,20 @@ body {
 	font-size: 14px;
 	background-color: transparent;
 	border-top: 2px solid black;
+}
+
+.language-icon {
+	height: 5%;
+	width: 5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.project-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+	grid-auto-rows: minmax(300px, auto);
+	grid-gap: 1em;
+	padding: 1rem;
 }

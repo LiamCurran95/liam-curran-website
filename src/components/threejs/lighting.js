@@ -1,7 +1,7 @@
 export function Lighting() {
 	return (
 		<>
-			<ambientLight intensity={0.3} color="hotpink" />
+			<ambientLight intensity={0.3} color="white" />
 			<directionalLight
 				color="yellow"
 				castShadow

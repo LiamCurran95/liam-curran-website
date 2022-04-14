@@ -24,13 +24,11 @@ export default function ProjectPage() {
 		<p>"Loading" </p>
 	) : (
 		<main className="project-cards">
-			<ul>
-				{data.map((project, index) => {
-					return (
-						<ProjectCard project={project} loading={isLoading} key={index} />
-					);
-				})}
-			</ul>
+			{data.map((project, index) => {
+				return (
+					<ProjectCard project={project} loading={isLoading} key={index} />
+				);
+			})}
 		</main>
 	);
 }
