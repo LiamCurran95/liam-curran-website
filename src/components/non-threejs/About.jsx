@@ -1,6 +1,7 @@
 export default function About() {
 	return (
 		<div className="about">
+			<h1>About</h1>
 			<p>
 				After graduating from The University of Manchester in 2019 I got to work
 				as an Environmental Planner. I enjoyed aspects of the work but overall I
@@ -28,7 +29,7 @@ export default function About() {
 				href="https://drive.google.com/file/d/1PmISGsnBECadqG_JNU0IbN1QnBdKU1Hh/view?usp=sharing"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="button-54"
+				className="button"
 			>
 				CV
 			</a>

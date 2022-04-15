@@ -216,6 +216,6 @@ export function projectTech(project) {
 		return ["JavaScript", "React", "Axios", "Heroku", "MUI", "VISX", "Netlify"];
 	}
 	if (project.name === "liam-curran-website") {
-		return ["JavaScript", "React", "Axios", "MUI", "three.js"];
+		return ["JavaScript", "React", "Axios", "three.js"];
 	}
 }

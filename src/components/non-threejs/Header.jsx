@@ -8,8 +8,11 @@ export default function Header() {
 		<header>
 			<div className="Navbar" alt="Navigation menu">
 				<button
-					className="hamburger-menu-button"
+					className="button"
 					onMouseEnter={() => {
+						navClicked ? setNavClicked(false) : setNavClicked(true);
+					}}
+					onClick={() => {
 						navClicked ? setNavClicked(false) : setNavClicked(true);
 					}}
 				>

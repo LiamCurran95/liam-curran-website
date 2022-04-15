@@ -1,6 +1,7 @@
 export default function Contact() {
 	return (
-		<div className="Contact">
+		<div className="contact">
+			<h1>Contact</h1>
 			<p>If you would like to get in touch, please reach out via LinkedIn</p>
 			<a
 				href={"https://www.linkedin.com/in/liamcurran1995/"}

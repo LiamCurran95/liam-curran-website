@@ -2,7 +2,6 @@ import { Canvas } from "react-three-fiber";
 import { Torus } from "./torus";
 import { Lighting } from "./lighting";
 import { softShadows, OrbitControls } from "@react-three/drei";
-import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -38,24 +37,21 @@ export function ThreeJS() {
 					<h1 className="welcome-text">
 						Liam Curran <br></br>Software Developer
 					</h1>
-					<button type="button" className="button-54">
+					<button type="button" className="button">
 						<Link to={`about`}>Enter</Link>
 					</button>
 				</div>
 			</>
-			<Button
-				variant="outlined"
+			<button
+				type="button"
+				className="button-change-colors"
 				onClick={() => {
 					setColor(randomColor());
 				}}
-				className="color-change-button"
 			>
-				Change Colors
-			</Button>
-			{/* //ADD IN WIREFRAME / SPEED ETC. */}
-
+				Click Me{" "}
+			</button>
 			<Canvas shadows camera={{ position: [0, 3, 5], fov: 60 }}>
-				{/* <color attach="background" args={["blue"]} /> */}
 				<Lighting />
 				<group>
 					<mesh
