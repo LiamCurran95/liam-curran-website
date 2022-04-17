@@ -1,20 +1,31 @@
-import { techImg, projectTech } from "../../utils.js/utils";
+import { techImg, projectTech, projectHostedLink } from "../../utils.js/utils";
 
 export default function ProjectCard({ project }) {
 	const tech = projectTech(project);
 	return (
 		<>
-			<h1>
-				{project.name.replaceAll("-", " ")}
-				<a href={project.html_url}>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-						className="github-repo-icon"
-						alt="github link"
-					/>
-				</a>
-			</h1>
+			<h1>{project.name.replaceAll("-", " ")}</h1>
 			<p>{project.description.split("(")[0]}</p>
+			<div className="buttons">
+				<a
+					className="button"
+					id="github-repo"
+					href={project.html_url}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					GitHub Repo
+				</a>
+				<a
+					className="button"
+					id="hosted-link"
+					href={projectHostedLink(project)}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Hosted Link
+				</a>
+			</div>
 			<div className="language-icon-map">
 				{tech.map((x, i) => {
 					return <div key={i}>{techImg(x)}</div>;

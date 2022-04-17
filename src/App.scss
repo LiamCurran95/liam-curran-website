@@ -36,6 +36,13 @@ a:hover {
 	cursor: pointer;
 }
 
+h1 {
+	font-family: Druk Wide Bold;
+}
+p {
+	font-family: Helvetica;
+}
+
 button:hover {
 	cursor: pointer;
 }
@@ -45,7 +52,7 @@ button:hover {
 		background-color: whitesmoke;
 		position: fixed;
 	}
-	button {
+	.button {
 		font-family: Druk Wide Bold;
 		text-transform: uppercase;
 		color: #000;
@@ -59,12 +66,11 @@ button:hover {
 		touch-action: manipulation;
 	}
 
-	button:active {
+	.button:active {
 		box-shadow: 0px 0px 0px 0px;
 		height: 32px;
 		width: 32px;
 	}
-
 	.landing {
 		z-index: 1;
 		position: absolute;
@@ -94,7 +100,6 @@ button:hover {
 	.canvas {
 		height: 100%;
 	}
-
 	.contact {
 		padding: 1rem;
 		height: 100vh;
@@ -108,327 +113,90 @@ button:hover {
 		height: 30px;
 		width: 30px;
 	}
-
 	.project-page-intro {
 		background-color: whitesmoke;
 		padding: 1rem;
 		height: auto;
 		width: 100%;
 	}
-
 	.project-cards {
 		background-color: whitesmoke;
-		height: 100vh;
-		width: 100%;
+		height: auto;
+		width: auto;
 		display: grid;
-		grid-template-columns: repeat(2, minmax(50%, 1fr));
-		grid-auto-rows: minmax(auto, auto);
+		grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 		grid-gap: 1em;
 		padding: 1em;
+		.project-card-map {
+			padding: 1rem;
+			border: 3px groove black;
+			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+				4px 4px 0px 0px, 5px 5px 0px 0px;
+		}
 		h1 {
 			text-transform: uppercase;
 			text-decoration: underline;
 			font-size: 22px;
 			word-wrap: normal;
-			.github-repo-icon {
-				position: relative;
-				right: -1rem;
-				margin: auto;
-				height: 30px;
-				width: 30px;
-			}
+			padding: 0rem;
 		}
-		p {
-			font-size: 13px;
-		}
-		.language-icon-map {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(50px, 50px));
-			grid-auto-rows: minmax(50px, auto);
-			grid-gap: 0.75em;
-			padding: 0.2em;
-		}
-		.language-icon {
-			height: 100%;
-			width: 100%;
-		}
-	}
-
-	.about {
-		background-color: whitesmoke;
-		padding: 1rem;
-		height: 100vh;
-		width: 100%;
-		p {
-			font-size: 14px;
-		}
-		.button {
-			font-family: Druk Wide Bold;
-			text-transform: uppercase;
-			color: #000;
-			border: 3px solid;
-			padding: 0.25em 0.5em;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-				4px 4px 0px 0px, 5px 5px 0px 0px;
-			position: relative;
-			left: 45%;
-			right: 45%;
-			width: 10%;
-			touch-action: manipulation;
-		}
-
-		.button:active {
-			box-shadow: 0px 0px 0px 0px;
-			left: 45%;
-			right: 45%;
-			width: 10%;
-		}
-	}
-
-	.navbar {
-		background-color: whitesmoke;
-		padding: 1rem;
-		z-index: 5;
-		.button {
-			position: absolute;
-			width: 2rem;
-			top: 1rem;
-			z-index: 10;
-		}
-		#theme-button {
-			font-family: Druk Wide Bold;
-			text-transform: uppercase;
-			font-weight: bold;
-			color: #000;
-			border: 3px solid;
-			padding: 0.25em 0.5em;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-				4px 4px 0px 0px, 5px 5px 0px 0px;
-			position: absolute;
-			top: 1rem;
-			left: 4rem;
-			width: 2rem;
-			z-index: 10;
-			touch-action: manipulation;
-		}
-		#theme-button:active {
-			box-shadow: 0px 0px 0px 0px;
-			left: 4rem;
-			z-index: 10;
-		}
-		.hamburger-menu-content {
-			position: absolute;
-			top: 4rem;
-			z-index: 10;
+		.buttons {
 			display: flex;
-			flex-direction: column;
-			justify-content: left;
-			align-items: flex-start;
-			backdrop-filter: blur(100px);
-		}
-		.hamburger-menu-content:hover {
-			background-color: rgb(255, 255, 255);
-			border: 3px solid;
-		}
-		.drop-content #show {
-			padding: 0.1rem;
-			background-color: rgb(255, 255, 255);
-			border: 3px solid;
-		}
-		#hide,
-		.hide {
-			display: none;
-		}
-		#show,
-		.show {
-			display: block;
-		}
-	}
-	.header-icons {
-		z-index: 2;
-		position: fixed;
-		right: 1rem;
-		top: 1rem;
-		.github-icon-header {
-			height: 30px;
-			width: 30px;
-			position: absolute;
-			right: 1em;
-		}
-		.linkedin-icon-header {
-			height: 30px;
-			width: 30px;
-			position: absolute;
-			right: 4rem;
-		}
-		.CV-icon-header {
-			height: 30px;
-			width: 30px;
-			position: absolute;
-			right: 7rem;
-		}
-	}
-
-	.button-change-colors {
-		font-family: Druk Wide Bold;
-		text-transform: uppercase;
-		color: #000;
-		border: 3px solid;
-		padding: 0.25em 0.5em;
-		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-			4px 4px 0px 0px, 5px 5px 0px 0px;
-		position: fixed;
-		bottom: 1rem;
-		left: 1rem;
-		width: fit-content;
-		z-index: 10;
-		touch-action: manipulation;
-	}
-
-	.button-change-colors:active {
-		box-shadow: 0px 0px 0px 0px;
-		z-index: 10;
-		bottom: 1rem;
-		left: 1rem;
-		width: fit-content;
-		z-index: 10;
-	}
-}
-
-.dark {
-	body {
-		background-color: #121212;
-		position: fixed;
-	}
-	button {
-		font-family: Druk Wide Bold;
-		text-transform: uppercase;
-		color: #000;
-		height: 32px;
-		width: 32px;
-		border: 3px solid;
-		padding: 0.25em 0.5em;
-		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-			4px 4px 0px 0px, 5px 5px 0px 0px;
-		position: relative;
-		touch-action: manipulation;
-	}
-
-	button:active {
-		box-shadow: 0px 0px 0px 0px;
-		height: 32px;
-		width: 32px;
-	}
-
-	.landing {
-		z-index: 1;
-		position: absolute;
-		top: 50%;
-		width: 50%;
-		left: 25%;
-		right: 25%;
-		text-align: center;
-		font-size: 14px;
-		border-top: 2px solid whitesmoke;
-		h1 {
-			font-family: Druk Wide Bold;
-			color: whitesmoke;
-		}
-		.button {
 			align-items: center;
-			left: 0rem;
-			width: fit-content;
-		}
-		.button:active {
-			box-shadow: 0px 0px 0px 0px;
-			top: 0rem;
-			width: fit-content;
-		}
-	}
-
-	.canvas {
-		height: 100%;
-	}
-
-	.contact {
-		padding: 1rem;
-		height: 100vh;
-		width: 100%;
-		background-color: #121212;
-		color: whitesmoke;
-
-		p {
-			font-size: 14px;
-			color: whitesmoke;
-		}
-	}
-	.linkedin-icon {
-		height: 30px;
-		width: 30px;
-	}
-
-	.project-page-intro {
-		background-color: #121212;
-		padding: 1rem;
-		height: auto;
-		width: 100%;
-		color: whitesmoke;
-	}
-
-	.project-cards {
-		background-color: #121212;
-		height: 100vh;
-		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(50%, 1fr));
-		grid-auto-rows: minmax(auto, auto);
-		grid-gap: 1em;
-		padding: 1em;
-		color: whitesmoke;
-		h1 {
-			color: whitesmoke;
-			text-transform: uppercase;
-			text-decoration: underline;
-			font-size: 22px;
-			word-wrap: normal;
-			.github-repo-icon {
-				position: relative;
-				right: -1rem;
-				margin: auto;
-				height: 30px;
-				width: 30px;
-				background-color: white;
-				border-radius: 14px;
+			justify-content: center;
+			height: auto;
+			.button {
+				margin: 1rem;
+				margin-bottom: 1rem;
+				font-size: small;
+				margin-bottom: 3rem;
+			}
+			#github-repo {
+				width: auto;
+				height: auto;
+			}
+			#hosted-link {
+				width: auto;
+				height: auto;
 			}
 		}
 		p {
-			font-size: 13px;
+			font-size: 15px;
 		}
 		.language-icon-map {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(50px, 50px));
-			grid-auto-rows: minmax(50px, auto);
 			grid-gap: 0.75em;
-			padding: 0.2em;
+			margin: 1rem;
 		}
 		.language-icon {
 			height: 100%;
 			width: 100%;
-			background-color: white;
-			border-radius: 12px;
 		}
 	}
-
 	.about {
-		background-color: #121212;
+		background-color: whitesmoke;
 		padding: 1rem;
 		height: 100vh;
 		width: 100%;
-		color: whitesmoke;
-
-		p {
-			font-size: 14px;
-			color: whitesmoke;
+		.content {
+			display: grid;
+			grid-template-columns:
+				2fr 1fr
+				p {
+				font-size: 14px;
+				grid-column-start: 1;
+				grid-column-end: 2;
+			}
+			.liam-headshot {
+				grid-column-start: 2;
+				grid-column-end: 3;
+				padding: 1rem;
+				width: 300px;
+				overflow: hidden;
+				border-radius: 50%;
+				margin: -10px 0 0 0;
+			}
 		}
 		.button {
 			font-family: Druk Wide Bold;
@@ -444,7 +212,6 @@ button:hover {
 			width: 10%;
 			touch-action: manipulation;
 		}
-
 		.button:active {
 			box-shadow: 0px 0px 0px 0px;
 			left: 45%;
@@ -452,9 +219,8 @@ button:hover {
 			width: 10%;
 		}
 	}
-
 	.navbar {
-		background-color: #121212;
+		background-color: whitesmoke;
 		padding: 1rem;
 		z-index: 5;
 		.button {
@@ -493,7 +259,6 @@ button:hover {
 			justify-content: left;
 			align-items: flex-start;
 			backdrop-filter: blur(100px);
-			background-color: white;
 		}
 		.hamburger-menu-content:hover {
 			background-color: rgb(255, 255, 255);
@@ -523,25 +288,18 @@ button:hover {
 			width: 30px;
 			position: absolute;
 			right: 1em;
-			background-color: whitesmoke;
-			border-radius: 13px;
-			background-size: 1px;
 		}
 		.linkedin-icon-header {
 			height: 30px;
 			width: 30px;
 			position: absolute;
 			right: 4rem;
-			// background-color: whitesmoke;
-			border-radius: 13px;
 		}
 		.CV-icon-header {
 			height: 30px;
 			width: 30px;
 			position: absolute;
 			right: 7rem;
-			background-color: whitesmoke;
-			border-radius: 13px;
 		}
 	}
 

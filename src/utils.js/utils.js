@@ -219,3 +219,21 @@ export function projectTech(project) {
 		return ["JavaScript", "React", "Axios", "three.js"];
 	}
 }
+
+export function projectHostedLink(project) {
+	if (project.name === "NC-News-Back-End") {
+		return "https://lc-nc-news.netlify.app/";
+	}
+	if (project.name === "NC-News-Front-End") {
+		return "https://lc-nc-news.netlify.app/";
+	}
+	if (project.name === "Vested-Back-End") {
+		return "https://vested.netlify.app/";
+	}
+	if (project.name === "Vested-Front-End") {
+		return "https://vested.netlify.app/";
+	}
+	if (project.name === "liam-curran-website") {
+		return "https://liamcurran.dev/";
+	}
+}
