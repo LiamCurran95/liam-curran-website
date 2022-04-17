@@ -100,7 +100,7 @@ export default function Header() {
 					rel="noopener noreferrer"
 				>
 					<img
-						src="https://freepngimg.com/download/resume/9-2-resume-picture.png"
+						src="https://cdn.iconscout.com/icon/free/png-256/resume-1956282-1650445.png"
 						className="CV-icon-header"
 						alt="CV link"
 					/>
