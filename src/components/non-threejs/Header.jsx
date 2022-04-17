@@ -11,7 +11,7 @@ export default function Header() {
 			<nav className="navbar" alt="Navigation menu">
 				<button
 					className="button"
-					onClick={() => {
+					onMouseEnter={() => {
 						navClicked ? setNavClicked(false) : setNavClicked(true);
 					}}
 				>
