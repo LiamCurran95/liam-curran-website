@@ -6,11 +6,15 @@ import Header from "./components/non-threejs/Header";
 import Contact from "./components/non-threejs/Contact";
 import About from "./components/non-threejs/About";
 import Error from "./components/non-threejs/Error";
+import { ThemeContext } from "./context/themeContext";
+import { useContext } from "react";
 
 function App() {
+	const { toggle } = useContext(ThemeContext);
+
 	return (
 		<BrowserRouter>
-			<>
+			<div className={`App ${toggle ? "dark" : "light"}`}>
 				<Header />
 				<Routes>
 					<Route path="/" element={<ThreeJS />} />
@@ -19,7 +23,7 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/*" element={<Error />} />
 				</Routes>
-			</>
+			</div>
 		</BrowserRouter>
 	);
 }

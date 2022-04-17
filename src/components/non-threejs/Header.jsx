@@ -1,23 +1,26 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../context/themeContext";
 
 export default function Header() {
 	const [navClicked, setNavClicked] = useState(false);
+	const { toggle, toggleFunction } = useContext(ThemeContext);
 
 	return (
-		<header>
-			<div className="Navbar" alt="Navigation menu">
+		<header className="header">
+			<nav className="navbar" alt="Navigation menu">
 				<button
 					className="button"
-					onMouseEnter={() => {
-						navClicked ? setNavClicked(false) : setNavClicked(true);
-					}}
 					onClick={() => {
 						navClicked ? setNavClicked(false) : setNavClicked(true);
 					}}
 				>
 					☰
 				</button>
+				<button id="theme-button" onClick={toggleFunction}>
+					{toggle ? " ☾ " : " ☼ "}
+				</button>
+
 				<section
 					className="hamburger-menu-content"
 					onMouseLeave={() => {
@@ -65,43 +68,43 @@ export default function Header() {
 						Contact
 					</Link>
 				</section>
-				<div className="navbar-icons">
-					<a
-						href={"https://github.com/liamcurran95"}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-							className="github-icon-header"
-							alt="github link"
-						/>
-					</a>
-					<a
-						href={"https://www.linkedin.com/in/liamcurran1995/"}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
-							className="linkedin-icon-header"
-							alt="linkedin link"
-						/>
-					</a>
-					<a
-						href={
-							"https://drive.google.com/file/d/1PmISGsnBECadqG_JNU0IbN1QnBdKU1Hh/view?usp=sharing"
-						}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img
-							src="https://freepngimg.com/download/resume/9-2-resume-picture.png"
-							className="CV-icon-header"
-							alt="CV link"
-						/>
-					</a>
-				</div>
+			</nav>
+			<div className="header-icons">
+				<a
+					href={"https://github.com/liamcurran95"}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+						className="github-icon-header"
+						alt="github link"
+					/>
+				</a>
+				<a
+					href={"https://www.linkedin.com/in/liamcurran1995/"}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+						className="linkedin-icon-header"
+						alt="linkedin link"
+					/>
+				</a>
+				<a
+					href={
+						"https://drive.google.com/file/d/1PmISGsnBECadqG_JNU0IbN1QnBdKU1Hh/view?usp=sharing"
+					}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="https://freepngimg.com/download/resume/9-2-resume-picture.png"
+						className="CV-icon-header"
+						alt="CV link"
+					/>
+				</a>
 			</div>
 		</header>
 	);
