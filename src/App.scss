@@ -343,6 +343,13 @@ button:hover {
 		width: fit-content;
 		z-index: 10;
 	}
+	.error {
+		padding: 1em;
+		height: 100vh;
+		.button {
+			width: fit-content;
+		}
+	}
 }
 
 .dark {
@@ -652,5 +659,15 @@ button:hover {
 		left: 1rem;
 		width: fit-content;
 		z-index: 10;
+	}
+
+	.error {
+		padding: 1em;
+		height: 100vh;
+		background-color: rgb(37, 37, 37);
+		color: whitesmoke;
+		.button {
+			width: fit-content;
+		}
 	}
 }
