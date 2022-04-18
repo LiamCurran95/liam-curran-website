@@ -48,24 +48,14 @@ export default function Header() {
 						Projects
 					</Link>
 					<Link
-						to="/about"
+						to="/aboutandcontact"
 						style={{ textDecoration: "none" }}
 						id={navClicked ? "show" : "hide"}
 						onClick={() => {
 							setNavClicked(false);
 						}}
 					>
-						About
-					</Link>
-					<Link
-						to="/contact"
-						style={{ textDecoration: "none" }}
-						id={navClicked ? "show" : "hide"}
-						onClick={() => {
-							setNavClicked(false);
-						}}
-					>
-						Contact
+						About and Contact
 					</Link>
 				</section>
 			</nav>
