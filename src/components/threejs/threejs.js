@@ -37,7 +37,7 @@ export function ThreeJS() {
 					Liam Curran <br></br>Software Developer
 				</h1>
 				<button type="button" className="button">
-					<Link to={`about`}>Enter</Link>
+					<Link to={`aboutandcontact`}>Enter</Link>
 				</button>
 			</div>
 			<button
