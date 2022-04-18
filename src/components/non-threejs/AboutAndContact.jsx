@@ -20,7 +20,7 @@ export default function AboutandContact() {
 						emulate classic games (don't tell Nintendo), built computers for
 						myself, friends and family, and just generally enjoy tinkering and
 						problem solving - which seemed to tie up with the skills mentioned
-						in the targeted ads I seemed to constantly get telling me I should
+						in the targeted ads I was constantly receiving telling me I should
 						'Join a Software Development bootcamp', so I started looking!{" "}
 						<br></br>
 						<br></br>I began learning Ruby and Python with Codecademy and
