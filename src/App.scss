@@ -101,6 +101,8 @@ button:hover {
 
 	.canvas {
 		height: 100%;
+		line-height: 0%;
+		font-size: 0%;
 	}
 	.contact {
 		padding: 1rem;
@@ -345,6 +347,7 @@ button:hover {
 .dark {
 	body {
 		background-color: rgb(37, 37, 37);
+		border: rgb(37, 37, 37) 2px solid;
 		position: fixed;
 	}
 	.button {
@@ -533,92 +536,101 @@ button:hover {
 			width: 10%;
 		}
 	}
-	.navbar {
-		background-color: rgb(37, 37, 37);
-		padding: 1rem;
-		z-index: 5;
-		.button {
-			position: absolute;
-			width: 2rem;
-			top: 1rem;
-			z-index: 10;
-		}
-		#theme-button {
-			font-family: Druk Wide Bold;
-			text-transform: uppercase;
-			font-weight: bold;
-			color: #000;
-			border: 3px solid;
-			padding: 0.25em 0.5em;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-				4px 4px 0px 0px, 5px 5px 0px 0px;
-			position: absolute;
-			top: 1rem;
-			left: 4rem;
-			width: 2rem;
-			z-index: 10;
-			touch-action: manipulation;
-			height: 32px;
-			width: 32px;
-		}
-		#theme-button:active {
-			box-shadow: 0px 0px 0px 0px;
-			left: 4rem;
-			z-index: 10;
-			height: 32px;
-			width: 32px;
-		}
-		.hamburger-menu-content {
-			position: absolute;
-			top: 4rem;
-			z-index: 10;
-			display: flex;
-			flex-direction: column;
-			justify-content: left;
-			align-items: flex-start;
-			backdrop-filter: blur(100px);
-			background-color: whitesmoke;
-		}
-		.hamburger-menu-content:hover {
-			background-color: whitesmoke;
-			border: 3px solid;
-		}
-		.drop-content #show {
-			padding: 0.1rem;
+	.header {
+		line-height: 0%;
+		font-size: 0%;
+		margin: 0;
+		.navbar {
+			background-color: transparent;
+			padding: 1rem;
+			z-index: 5;
+			line-height: 0%;
+			font-size: 0%;
+			margin-top: 0;
 			background-color: rgb(37, 37, 37);
-			border: 3px solid;
+			.button {
+				position: absolute;
+				width: 2rem;
+				top: 1rem;
+				z-index: 10;
+			}
+			#theme-button {
+				font-family: Druk Wide Bold;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #000;
+				border: 3px solid;
+				padding: 0.25em 0.5em;
+				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+					4px 4px 0px 0px, 5px 5px 0px 0px;
+				position: absolute;
+				top: 1rem;
+				left: 4rem;
+				width: 2rem;
+				z-index: 10;
+				touch-action: manipulation;
+				height: 32px;
+				width: 32px;
+			}
+			#theme-button:active {
+				box-shadow: 0px 0px 0px 0px;
+				left: 4rem;
+				z-index: 10;
+				height: 32px;
+				width: 32px;
+			}
+			.hamburger-menu-content {
+				position: absolute;
+				top: 4rem;
+				z-index: 10;
+				display: flex;
+				flex-direction: column;
+				justify-content: left;
+				align-items: flex-start;
+				backdrop-filter: blur(100px);
+				background-color: whitesmoke;
+			}
+			.hamburger-menu-content:hover {
+				background-color: whitesmoke;
+				border: 3px solid;
+			}
+			.drop-content #show {
+				padding: 0.1rem;
+				background-color: rgb(37, 37, 37);
+				border: 3px solid;
+			}
+			#hide,
+			.hide {
+				display: none;
+			}
+			#show,
+			.show {
+				display: block;
+			}
 		}
-		#hide,
-		.hide {
-			display: none;
-		}
-		#show,
-		.show {
-			display: block;
-		}
-	}
-	.header-icons {
-		z-index: 2;
-		position: fixed;
-		right: 1rem;
-		top: 1rem;
-		.github-icon-header {
-			height: 30px;
-			width: 30px;
-			position: absolute;
-			right: 1em;
-		}
-		.linkedin-icon-header {
-			height: 30px;
-			width: 30px;
-			position: absolute;
-			right: 4rem;
-		}
-		.CV-icon-header {
-			height: 30px;
-			width: 30px;
-			position: absolute;
-			right: 7rem;
+		.header-icons {
+			z-index: 2;
+			position: fixed;
+			right: 1rem;
+			top: 1rem;
+			.github-icon-header {
+				height: 30px;
+				width: 30px;
+				position: absolute;
+				right: 1em;
+			}
+			.linkedin-icon-header {
+				height: 30px;
+				width: 30px;
+				position: absolute;
+				right: 4rem;
+			}
+			.CV-icon-header {
+				height: 30px;
+				width: 30px;
+				position: absolute;
+				right: 7rem;
+			}
 		}
 	}
 
