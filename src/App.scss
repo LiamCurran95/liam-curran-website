@@ -697,35 +697,28 @@ button:hover {
 			}
 		}
 	}
+	.dark {
+		.about-and-contact {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr auto auto;
+			.about {
+				.button {
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 10px;
+					text-align: center;
+				}
+				.button:active {
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 10px;
+					text-align: center;
+				}
+			}
+			.liam-headshot {
+				width: 200px;
+			}
+		}
+	}
 }
-
-// .about-and-contact {
-// 	display: grid;
-// 	grid-template-columns: 1fr auto;
-// 	grid-template-rows: 1fr 1fr;
-// 	.liam-headshot {
-// 		padding: 1rem;
-// 		width: 275px;
-// 		border-radius: 50%;
-// 		justify-content: center;
-// 		align-content: center;
-// 		margin: auto;
-// 	}
-// 	.about {
-// 		background-color: whitesmoke;
-// 		padding: 1rem;
-// 		height: auto;
-// 		width: 100%;
-
-// 	.contact {
-// 		position: relative;
-// 		top: 0.5rem;
-// 		padding: 1rem;
-// 		height: auto;
-// 		width: 100%;
-// 		background-color: whitesmoke;
-// 		p {
-// 			font-size: 14px;
-// 		}
-// 	}
-// }
