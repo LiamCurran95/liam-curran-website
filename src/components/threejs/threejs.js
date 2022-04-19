@@ -31,7 +31,7 @@ export function ThreeJS() {
 	};
 
 	return (
-		<body className="home-page">
+		<div className="home-page">
 			<div className="landing">
 				<h1 className="welcome-text">
 					Liam Curran <br></br>Software Developer
@@ -56,6 +56,6 @@ export function ThreeJS() {
 					<OrbitControls />
 				</Canvas>
 			</div>
-		</body>
+		</div>
 	);
 }

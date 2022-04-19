@@ -53,6 +53,12 @@ button:hover {
 		background-color: whitesmoke;
 		position: fixed;
 	}
+	.home-page {
+		height: 100%;
+		width: 100vw;
+		position: absolute;
+		background-color: transparent;
+	}
 	.button {
 		font-family: Druk Wide Bold;
 		text-transform: uppercase;
@@ -352,6 +358,12 @@ button:hover {
 		background-color: rgb(37, 37, 37);
 		border: rgb(37, 37, 37) 2px solid;
 		position: fixed;
+	}
+	.home-page {
+		height: 100%;
+		width: 100vw;
+		position: absolute;
+		background-color: rgb(37, 37, 37);
 	}
 	.button {
 		font-family: Druk Wide Bold;
