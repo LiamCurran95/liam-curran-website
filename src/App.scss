@@ -67,7 +67,6 @@ button:hover {
 		touch-action: manipulation;
 		text-align: center;
 	}
-
 	.button:active {
 		box-shadow: 0px 0px 0px 0px;
 		height: 32px;
@@ -99,20 +98,10 @@ button:hover {
 			width: fit-content;
 		}
 	}
-
 	.canvas {
 		height: 100%;
 		line-height: 0%;
 		font-size: 0%;
-	}
-	.contact {
-		padding: 1rem;
-		height: auto;
-		width: 100%;
-		background-color: whitesmoke;
-		p {
-			font-size: 14px;
-		}
 	}
 	.linkedin-icon {
 		height: 30px;
@@ -183,52 +172,60 @@ button:hover {
 			width: 100%;
 		}
 	}
-	.about {
-		background-color: whitesmoke;
-		padding: 1rem;
-		height: auto;
-		width: 100%;
-		.content {
-			display: grid;
-			grid-template-columns: 2fr 1fr;
+	.about-and-contact {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-rows: 1fr 1fr;
+		.liam-headshot {
+			padding: 1rem;
+			width: 275px;
+			border-radius: 50%;
+			justify-content: center;
+			align-content: center;
+			margin: auto;
+		}
+		.about {
+			background-color: whitesmoke;
+			padding: 1rem;
+			height: auto;
+			width: 100%;
 			p {
 				font-size: 14px;
-				grid-column-start: 1;
-				grid-column-end: 2;
 				text-align: justify;
 			}
-			.liam-headshot {
-				display: flex;
-				grid-column-start: 2;
-				grid-column-end: 3;
-				padding: 1rem;
-				width: 300px;
-				overflow: hidden;
-				border-radius: 50%;
-				justify-content: center;
-				align-content: center;
-				margin: auto;
+			.button {
+				font-family: Druk Wide Bold;
+				text-transform: uppercase;
+				color: #000;
+				border: 3px solid;
+				padding: 0.25em 0.5em;
+				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+					4px 4px 0px 0px, 5px 5px 0px 0px;
+				position: relative;
+				top: 0.5rem;
+				left: 45%;
+				right: 45%;
+				width: fit-content;
+				touch-action: manipulation;
+			}
+			.button:active {
+				box-shadow: 0px 0px 0px 0px;
+				top: 0.5rem;
+				left: 45%;
+				right: 45%;
+				width: fit-content;
 			}
 		}
-		.button {
-			font-family: Druk Wide Bold;
-			text-transform: uppercase;
-			color: #000;
-			border: 3px solid;
-			padding: 0.25em 0.5em;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-				4px 4px 0px 0px, 5px 5px 0px 0px;
+		.contact {
 			position: relative;
-			left: 45%;
-			right: 45%;
-			width: 10%;
-			touch-action: manipulation;
-		}
-		.button:active {
-			box-shadow: 0px 0px 0px 0px;
-			left: 45%;
-			right: 45%;
-			width: 10%;
+			top: 0.5rem;
+			padding: 1rem;
+			height: auto;
+			width: 100%;
+			background-color: whitesmoke;
+			p {
+				font-size: 14px;
+			}
 		}
 	}
 	.navbar {
@@ -318,7 +315,6 @@ button:hover {
 			right: 7rem;
 		}
 	}
-
 	.button-change-colors {
 		font-family: Druk Wide Bold;
 		text-transform: uppercase;
@@ -334,7 +330,6 @@ button:hover {
 		z-index: 10;
 		touch-action: manipulation;
 	}
-
 	.button-change-colors:active {
 		box-shadow: 0px 0px 0px 0px;
 		z-index: 10;
@@ -406,19 +401,8 @@ button:hover {
 			width: fit-content;
 		}
 	}
-
 	.canvas {
 		height: 100%;
-	}
-	.contact {
-		padding: 1rem;
-		height: 100vh;
-		width: 100%;
-		background-color: rgb(37, 37, 37);
-		color: whitesmoke;
-		p {
-			font-size: 14px;
-		}
 	}
 	.linkedin-icon {
 		height: 30px;
@@ -494,56 +478,70 @@ button:hover {
 			width: 100%;
 		}
 	}
-	.about {
+	.about-and-contact {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-rows: 1fr 1fr;
 		background-color: rgb(37, 37, 37);
-		padding: 1rem;
-		height: auto;
-		width: 100%;
 		color: whitesmoke;
-		.content {
-			display: grid;
-			grid-template-columns: 2fr 1fr;
+		height: 100vh;
+
+		.liam-headshot {
+			padding: 1rem;
+			width: 275px;
+			border-radius: 50%;
+			justify-content: center;
+			align-content: center;
+			margin: auto;
+		}
+		.about {
+			background-color: rgb(37, 37, 37);
+			padding: 1rem;
+			height: auto;
+			width: 100%;
 			p {
 				font-size: 14px;
-				grid-column-start: 1;
-				grid-column-end: 2;
 				text-align: justify;
 			}
-			.liam-headshot {
-				display: flex;
-				grid-column-start: 2;
-				grid-column-end: 3;
-				padding: 1rem;
-				width: 300px;
-				overflow: hidden;
-				border-radius: 50%;
-				justify-content: center;
-				align-content: center;
-				margin: auto;
+			.button {
+				font-family: Druk Wide Bold;
+				text-transform: uppercase;
+				color: #000;
+				border: 3px solid;
+				padding: 0.25em 0.5em;
+				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+					4px 4px 0px 0px, 5px 5px 0px 0px;
+				position: relative;
+				top: 0.5rem;
+				left: 45%;
+				right: 45%;
+				width: fit-content;
+				touch-action: manipulation;
+				background-color: whitesmoke;
+			}
+			.button:active {
+				box-shadow: 0px 0px 0px 0px;
+				top: 0.5rem;
+				left: 45%;
+				right: 45%;
+				width: fit-content;
+				background-color: whitesmoke;
 			}
 		}
-		.button {
-			font-family: Druk Wide Bold;
-			text-transform: uppercase;
-			color: #000;
-			border: 3px solid;
-			padding: 0.25em 0.5em;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-				4px 4px 0px 0px, 5px 5px 0px 0px;
+		.contact {
 			position: relative;
-			left: 45%;
-			right: 45%;
-			width: 10%;
-			touch-action: manipulation;
-			background-color: whitesmoke;
-		}
-		.button:active {
-			box-shadow: 0px 0px 0px 0px;
-			left: 45%;
-			right: 45%;
-			width: 10%;
+			top: 0.5rem;
+			padding: 1rem;
+			height: auto;
+			width: 100%;
+			background-color: rgb(37, 37, 37);
+			color: whitesmoke;
+			p {
+				font-size: 14px;
+			}
 		}
 	}
+
 	.header {
 		.navbar {
 			background-color: transparent;
@@ -671,3 +669,61 @@ button:hover {
 		}
 	}
 }
+
+@media screen and (max-width: 700px) {
+	.light {
+		.about-and-contact {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr auto auto;
+			.about {
+				.button {
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 10px;
+					text-align: center;
+				}
+				.button:active {
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 10px;
+					text-align: center;
+				}
+			}
+			.liam-headshot {
+				width: 200px;
+			}
+		}
+	}
+}
+
+// .about-and-contact {
+// 	display: grid;
+// 	grid-template-columns: 1fr auto;
+// 	grid-template-rows: 1fr 1fr;
+// 	.liam-headshot {
+// 		padding: 1rem;
+// 		width: 275px;
+// 		border-radius: 50%;
+// 		justify-content: center;
+// 		align-content: center;
+// 		margin: auto;
+// 	}
+// 	.about {
+// 		background-color: whitesmoke;
+// 		padding: 1rem;
+// 		height: auto;
+// 		width: 100%;
+
+// 	.contact {
+// 		position: relative;
+// 		top: 0.5rem;
+// 		padding: 1rem;
+// 		height: auto;
+// 		width: 100%;
+// 		background-color: whitesmoke;
+// 		p {
+// 			font-size: 14px;
+// 		}
+// 	}
+// }

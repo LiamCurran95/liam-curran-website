@@ -66,7 +66,11 @@ export default function Header() {
 					rel="noopener noreferrer"
 				>
 					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+						src={
+							toggle
+								? "https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
+								: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+						}
 						className="github-icon-header"
 						alt="github link"
 					/>
