@@ -1,7 +1,7 @@
-@font-face {
-	font-family: "Druk Wide Bold";
-	src: local("/src/resources/Druk-Wide-Bold.ttf") format("truetype");
-}
+// @font-face {
+// 	font-family: "Druk Wide Bold";
+// 	src: local("/src/resources/Druk-Wide-Bold.ttf") format("truetype");
+// }
 
 * {
 	box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-y: auto;
-	font-family: Druk Wide Bold;
+	font-family: "Bebas Neue", cursive;
 	background-color: whitesmoke;
 }
 
@@ -28,7 +28,7 @@ a:hover {
 }
 
 h1 {
-	font-family: Druk Wide Bold;
+	font-family: "Bebas Neue", cursive;
 }
 p {
 	font-family: Helvetica;
@@ -50,7 +50,7 @@ button:hover {
 		background-color: transparent;
 	}
 	.button {
-		font-family: Druk Wide Bold;
+		font-family: "Bebas Neue", cursive;
 		text-transform: uppercase;
 		color: #000;
 		height: 32px;
@@ -79,7 +79,7 @@ button:hover {
 		font-size: 14px;
 		border-top: 2px solid black;
 		h1 {
-			font-family: Druk Wide Bold;
+			font-family: "Bebas Neue", cursive;
 			color: black;
 		}
 		.button {
@@ -190,7 +190,7 @@ button:hover {
 				text-align: justify;
 			}
 			.button {
-				font-family: Druk Wide Bold;
+				font-family: "Bebas Neue", cursive;
 				text-transform: uppercase;
 				color: #000;
 				border: 3px solid;
@@ -235,7 +235,7 @@ button:hover {
 			z-index: 10;
 		}
 		#theme-button {
-			font-family: Druk Wide Bold;
+			font-family: "Bebas Neue", cursive;
 			text-transform: uppercase;
 			font-weight: bold;
 			color: #000;
@@ -312,7 +312,7 @@ button:hover {
 		}
 	}
 	.button-change-colors {
-		font-family: Druk Wide Bold;
+		font-family: "Bebas Neue", cursive;
 		text-transform: uppercase;
 		color: #000;
 		border: 3px solid;
@@ -356,7 +356,7 @@ button:hover {
 		background-color: rgb(37, 37, 37);
 	}
 	.button {
-		font-family: Druk Wide Bold;
+		font-family: "Bebas Neue", cursive;
 		text-transform: uppercase;
 		color: #000;
 		height: 32px;
@@ -386,7 +386,7 @@ button:hover {
 		border-top: 2px solid rgb(255, 255, 255);
 		box-shadow: -1px #000;
 		h1 {
-			font-family: Druk Wide Bold;
+			font-family: "Bebas Neue", cursive;
 			color: white;
 			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
 				1px 1px 0 #000;
@@ -506,7 +506,7 @@ button:hover {
 				text-align: justify;
 			}
 			.button {
-				font-family: Druk Wide Bold;
+				font-family: "Bebas Neue", cursive;
 				text-transform: uppercase;
 				color: #000;
 				border: 3px solid;
@@ -557,7 +557,7 @@ button:hover {
 				z-index: 100;
 			}
 			#theme-button {
-				font-family: Druk Wide Bold;
+				font-family: "Bebas Neue", cursive;
 				text-transform: uppercase;
 				font-weight: bold;
 				color: #000;
@@ -637,7 +637,7 @@ button:hover {
 	}
 
 	.button-change-colors {
-		font-family: Druk Wide Bold;
+		font-family: "Bebas Neue", cursive;
 		text-transform: uppercase;
 		color: #000;
 		border: 3px solid;
