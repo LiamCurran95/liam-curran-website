@@ -25,13 +25,16 @@ p {
 	font-family: Helvetica;
 }
 
+button {
+	font-size: 14px;
+}
 button:hover {
 	cursor: pointer;
 }
 
 .light {
 	body {
-		background-color: white;
+		background-color: whitesmoke;
 		position: fixed;
 	}
 	.home-page {
@@ -43,7 +46,6 @@ button:hover {
 	.button {
 		font-family: "Bebas Neue", cursive;
 		text-transform: uppercase;
-		color: #000;
 		height: 32px;
 		width: 32px;
 		border: 3px solid;
@@ -52,7 +54,6 @@ button:hover {
 			4px 4px 0px 0px, 5px 5px 0px 0px;
 		position: relative;
 		touch-action: manipulation;
-		text-align: center;
 	}
 	.button:active {
 		box-shadow: 0px 0px 0px 0px;
@@ -86,6 +87,7 @@ button:hover {
 		}
 	}
 	.canvas {
+		background-color: whitesmoke;
 		height: 100%;
 		line-height: 0%;
 		font-size: 0%;
@@ -95,17 +97,17 @@ button:hover {
 		width: 30px;
 	}
 	.project-page-intro {
-		background-color: white;
+		background-color: whitesmoke;
 		padding: 1rem;
 		height: auto;
 		width: 100%;
 	}
 	.project-cards {
-		background-color: white;
+		background-color: whitesmoke;
 		height: auto;
 		width: auto;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 		grid-gap: 1em;
 		padding: 1em;
 		.project-card-map {
@@ -163,6 +165,7 @@ button:hover {
 		display: grid;
 		grid-template-columns: 1fr auto;
 		grid-template-rows: 1fr 1fr;
+		background-color: whitesmoke;
 		.liam-headshot {
 			padding: 1rem;
 			width: 275px;
@@ -172,7 +175,7 @@ button:hover {
 			margin: auto;
 		}
 		.about {
-			background-color: white;
+			background-color: whitesmoke;
 			padding: 1rem;
 			height: auto;
 			width: 100%;
@@ -208,18 +211,18 @@ button:hover {
 			padding: 1rem;
 			height: auto;
 			width: 100%;
-			background-color: white;
+			background-color: whitesmoke;
 			p {
 				font-size: 14px;
 			}
 		}
 	}
 	.navbar {
-		background-color: white;
+		background-color: whitesmoke;
 		padding: 1rem;
 		z-index: 5;
 		.button {
-			position: absolute;
+			position: fixed;
 			width: 2rem;
 			top: 1rem;
 			z-index: 10;
@@ -233,7 +236,7 @@ button:hover {
 			padding: 0.25em 0.5em;
 			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
 				4px 4px 0px 0px, 5px 5px 0px 0px;
-			position: absolute;
+			position: fixed;
 			top: 1rem;
 			left: 4rem;
 			width: 2rem;
@@ -250,17 +253,17 @@ button:hover {
 			width: 32px;
 		}
 		.hamburger-menu-content {
-			position: absolute;
+			position: fixed;
 			top: 4rem;
 			z-index: 10;
 			display: flex;
 			flex-direction: column;
 			justify-content: left;
 			align-items: flex-start;
-			background-color: white;
+			background-color: whitesmoke;
 		}
 		.hamburger-menu-content:hover {
-			background-color: white;
+			background-color: whitesmoke;
 		}
 		#hide,
 		.hide {
@@ -403,13 +406,12 @@ button:hover {
 	}
 	.project-cards {
 		background-color: rgb(37, 37, 37);
-		height: 100vh;
+		height: max-content;
 		width: auto;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 		grid-gap: 1em;
 		padding: 1em;
-
 		.project-card-map {
 			padding: 1rem;
 			border: 3px groove black;
@@ -468,10 +470,9 @@ button:hover {
 	.about-and-contact {
 		display: grid;
 		grid-template-columns: 1fr auto;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 		background-color: rgb(37, 37, 37);
 		color: whitesmoke;
-		height: 100vh;
 		.liam-headshot {
 			padding: 1rem;
 			width: 275px;
@@ -483,7 +484,6 @@ button:hover {
 		.about {
 			background-color: rgb(37, 37, 37);
 			padding: 1rem;
-			height: auto;
 			width: 100%;
 			p {
 				font-size: 14px;
@@ -517,7 +517,6 @@ button:hover {
 		.contact {
 			position: relative;
 			padding: 1rem;
-			height: auto;
 			width: 100%;
 			background-color: rgb(37, 37, 37);
 			color: whitesmoke;
@@ -527,13 +526,13 @@ button:hover {
 		}
 	}
 	.header {
+		background-color: rgb(37, 37, 37);
 		.navbar {
-			background-color: transparent;
 			padding: 1rem;
 			z-index: 5;
 			background-color: rgb(37, 37, 37);
 			.button {
-				position: absolute;
+				position: fixed;
 				width: 2rem;
 				top: 1rem;
 				z-index: 100;
@@ -547,10 +546,9 @@ button:hover {
 				padding: 0.25em 0.5em;
 				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
 					4px 4px 0px 0px, 5px 5px 0px 0px;
-				position: absolute;
+				position: fixed;
 				top: 1rem;
 				left: 4rem;
-				width: 2rem;
 				z-index: 10;
 				touch-action: manipulation;
 				height: 32px;
@@ -564,7 +562,7 @@ button:hover {
 				width: 32px;
 			}
 			.hamburger-menu-content {
-				position: absolute;
+				position: fixed;
 				top: 4rem;
 				z-index: 10;
 				display: flex;
@@ -579,7 +577,6 @@ button:hover {
 			.hamburger-menu-content:hover {
 				color: whitesmoke;
 			}
-
 			#hide,
 			.hide {
 				display: none;
@@ -654,10 +651,7 @@ button:hover {
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr auto;
-			height: 100vh;
 			.about {
-				position: absolute;
-				overflow: none;
 				.button {
 					margin-left: auto;
 					margin-right: auto;
@@ -694,13 +688,6 @@ button:hover {
 					margin-top: 10px;
 					text-align: center;
 				}
-			}
-			.contact {
-				position: relative;
-				margin-left: auto;
-				margin-right: auto;
-				height: fit-content;
-				padding-bottom: 0;
 			}
 			.liam-headshot {
 				width: 200px;

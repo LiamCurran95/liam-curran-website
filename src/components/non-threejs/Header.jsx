@@ -7,12 +7,15 @@ export default function Header() {
 	const { toggle, toggleFunction } = useContext(ThemeContext);
 
 	return (
-		<header className="header">
+		<div className="header">
 			<nav className="navbar" alt="Navigation menu">
 				<button
 					className="button"
-					onMouseEnter={() => {
+					onClick={() => {
 						navClicked ? setNavClicked(false) : setNavClicked(true);
+						setTimeout(() => {
+							setNavClicked(false);
+						}, 1000);
 					}}
 				>
 					☰
@@ -103,6 +106,6 @@ export default function Header() {
 					/>
 				</a>
 			</div>
-		</header>
+		</div>
 	);
 }
