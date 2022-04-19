@@ -34,6 +34,7 @@ export default function Header() {
 						onClick={() => {
 							setNavClicked(false);
 						}}
+						className="dropdown-link"
 					>
 						Home
 					</Link>
@@ -44,6 +45,7 @@ export default function Header() {
 						onClick={() => {
 							setNavClicked(false);
 						}}
+						className="dropdown-link"
 					>
 						Projects
 					</Link>
@@ -54,6 +56,7 @@ export default function Header() {
 						onClick={() => {
 							setNavClicked(false);
 						}}
+						className="dropdown-link"
 					>
 						About and Contact
 					</Link>
