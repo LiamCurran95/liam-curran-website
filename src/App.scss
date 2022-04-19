@@ -1,16 +1,9 @@
-// @font-face {
-// 	font-family: "Druk Wide Bold";
-// 	src: local("/src/resources/Druk-Wide-Bold.ttf") format("truetype");
-// }
-
 * {
 	box-sizing: border-box;
 }
 
 html,
 body {
-	// width: 100%;
-	// height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: "Bebas Neue", cursive;
@@ -38,7 +31,7 @@ button:hover {
 
 .light {
 	body {
-		background-color: whitesmoke;
+		background-color: white;
 		position: fixed;
 	}
 	.home-page {
@@ -102,13 +95,13 @@ button:hover {
 		width: 30px;
 	}
 	.project-page-intro {
-		background-color: whitesmoke;
+		background-color: white;
 		padding: 1rem;
 		height: auto;
 		width: 100%;
 	}
 	.project-cards {
-		background-color: whitesmoke;
+		background-color: white;
 		height: auto;
 		width: auto;
 		display: grid;
@@ -179,7 +172,7 @@ button:hover {
 			margin: auto;
 		}
 		.about {
-			background-color: whitesmoke;
+			background-color: white;
 			padding: 1rem;
 			height: auto;
 			width: 100%;
@@ -196,7 +189,7 @@ button:hover {
 				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
 					4px 4px 0px 0px, 5px 5px 0px 0px;
 				position: relative;
-				top: 0.5rem;
+				margin-bottom: 1rem;
 				left: 45%;
 				right: 45%;
 				width: fit-content;
@@ -204,7 +197,7 @@ button:hover {
 			}
 			.button:active {
 				box-shadow: 0px 0px 0px 0px;
-				top: 0.5rem;
+				margin-bottom: 1rem;
 				left: 45%;
 				right: 45%;
 				width: fit-content;
@@ -215,14 +208,14 @@ button:hover {
 			padding: 1rem;
 			height: auto;
 			width: 100%;
-			background-color: whitesmoke;
+			background-color: white;
 			p {
 				font-size: 14px;
 			}
 		}
 	}
 	.navbar {
-		background-color: whitesmoke;
+		background-color: white;
 		padding: 1rem;
 		z-index: 5;
 		.button {
@@ -264,10 +257,10 @@ button:hover {
 			flex-direction: column;
 			justify-content: left;
 			align-items: flex-start;
-			background-color: whitesmoke;
+			background-color: white;
 		}
 		.hamburger-menu-content:hover {
-			background-color: rgb(255, 255, 255);
+			background-color: white;
 		}
 		#hide,
 		.hide {
@@ -447,7 +440,7 @@ button:hover {
 				margin-bottom: 1rem;
 				font-size: small;
 				margin-bottom: 3rem;
-				background-color: whitesmoke;
+				background-color: white;
 			}
 			#github-repo {
 				width: auto;
@@ -505,20 +498,20 @@ button:hover {
 				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
 					4px 4px 0px 0px, 5px 5px 0px 0px;
 				position: relative;
-				top: 0.5rem;
 				left: 45%;
 				right: 45%;
+				margin-bottom: 1rem;
 				width: fit-content;
 				touch-action: manipulation;
-				background-color: whitesmoke;
+				background-color: white;
 			}
 			.button:active {
 				box-shadow: 0px 0px 0px 0px;
-				top: 0.5rem;
 				left: 45%;
 				right: 45%;
+				margin-bottom: 1rem;
 				width: fit-content;
-				background-color: whitesmoke;
+				background-color: white;
 			}
 		}
 		.contact {
