@@ -96,69 +96,74 @@ button:hover {
 		height: 30px;
 		width: 30px;
 	}
-	.project-page-intro {
+
+	.project-page {
+		height: 100vh;
 		background-color: whitesmoke;
-		padding: 1rem;
-		height: auto;
-		width: 100%;
-	}
-	.project-cards {
-		background-color: whitesmoke;
-		height: auto;
-		width: auto;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-		grid-gap: 1em;
-		padding: 1em;
-		.project-card-map {
+		.intro {
+			background-color: whitesmoke;
 			padding: 1rem;
-			border: 3px groove black;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-				4px 4px 0px 0px, 5px 5px 0px 0px;
-		}
-		h1 {
-			text-transform: uppercase;
-			text-decoration: underline;
-			font-size: 22px;
-			word-wrap: normal;
-			padding: 0rem;
-			text-align: center;
-		}
-		p {
-			text-align: justify;
-		}
-		.buttons {
-			display: flex;
-			align-items: center;
-			justify-content: center;
 			height: auto;
-			.button {
-				margin: 1rem;
-				margin-bottom: 1rem;
-				font-size: small;
-				margin-bottom: 3rem;
-			}
-			#github-repo {
-				width: auto;
-				height: auto;
-			}
-			#hosted-link {
-				width: auto;
-				height: auto;
-			}
-		}
-		p {
-			font-size: 15px;
-		}
-		.language-icon-map {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(50px, 50px));
-			grid-gap: 0.75em;
-			margin: 1rem;
-		}
-		.language-icon {
-			height: 100%;
 			width: 100%;
+		}
+		.project-cards {
+			background-color: whitesmoke;
+			height: auto;
+			width: auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+			grid-gap: 1em;
+			padding: 1em;
+			.project-card-map {
+				// padding: 1rem;
+				border: 3px groove black;
+				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+					4px 4px 0px 0px, 5px 5px 0px 0px;
+			}
+			h1 {
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-size: 22px;
+				word-wrap: normal;
+				padding: 0rem;
+				text-align: center;
+			}
+			p {
+				text-align: justify;
+			}
+			.buttons {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: auto;
+				.button {
+					margin: 1rem;
+					margin-bottom: 1rem;
+					font-size: small;
+					margin-bottom: 3rem;
+				}
+				#github-repo {
+					width: auto;
+					height: auto;
+				}
+				#hosted-link {
+					width: auto;
+					height: auto;
+				}
+			}
+			p {
+				font-size: 15px;
+			}
+			.language-icon-map {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(45px, 45px));
+				grid-gap: 0.75em;
+				margin: 1rem;
+			}
+			.language-icon {
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 	.about-and-contact {
@@ -397,74 +402,78 @@ button:hover {
 		height: 30px;
 		width: 30px;
 	}
-	.project-page-intro {
-		color: whitesmoke;
+	.project-page {
+		height: 100vh;
 		background-color: rgb(37, 37, 37);
-		padding: 1rem;
-		height: auto;
-		width: 100%;
-	}
-	.project-cards {
-		background-color: rgb(37, 37, 37);
-		height: max-content;
-		width: auto;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-		grid-gap: 1em;
-		padding: 1em;
-		.project-card-map {
+		.intro {
+			color: whitesmoke;
+			background-color: rgb(37, 37, 37);
 			padding: 1rem;
-			border: 3px groove black;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
-				4px 4px 0px 0px, 5px 5px 0px 0px;
-		}
-		h1 {
-			color: whitesmoke;
-			text-transform: uppercase;
-			text-decoration: underline;
-			font-size: 22px;
-			word-wrap: normal;
-			padding: 0rem;
-			text-align: center;
-		}
-		p {
-			color: whitesmoke;
-			text-align: justify;
-		}
-		.buttons {
-			display: flex;
-			align-items: center;
-			justify-content: center;
 			height: auto;
-			color: whitesmoke;
-			.button {
-				margin: 1rem;
-				margin-bottom: 1rem;
-				font-size: small;
-				margin-bottom: 3rem;
-				background-color: white;
-			}
-			#github-repo {
-				width: auto;
-				height: auto;
-			}
-			#hosted-link {
-				width: auto;
-				height: auto;
-			}
-		}
-		p {
-			font-size: 15px;
-		}
-		.language-icon-map {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(50px, 50px));
-			grid-gap: 0.75em;
-			margin: 1rem;
-		}
-		.language-icon {
-			height: 100%;
 			width: 100%;
+		}
+		.project-cards {
+			background-color: rgb(37, 37, 37);
+			height: max-content;
+			width: auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+			grid-gap: 1em;
+			padding: 1em;
+			.project-card-map {
+				padding: 1rem;
+				border: 3px groove black;
+				box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+					4px 4px 0px 0px, 5px 5px 0px 0px;
+			}
+			h1 {
+				color: whitesmoke;
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-size: 22px;
+				word-wrap: normal;
+				padding: 0rem;
+				text-align: center;
+			}
+			p {
+				color: whitesmoke;
+				text-align: justify;
+			}
+			.buttons {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: auto;
+				color: whitesmoke;
+				.button {
+					margin: 1rem;
+					margin-bottom: 1rem;
+					font-size: small;
+					margin-bottom: 3rem;
+					background-color: white;
+				}
+				#github-repo {
+					width: auto;
+					height: auto;
+				}
+				#hosted-link {
+					width: auto;
+					height: auto;
+				}
+			}
+			p {
+				font-size: 15px;
+			}
+			.language-icon-map {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(45px, 45px));
+				grid-gap: 0.75em;
+				margin: 1rem;
+			}
+			.language-icon {
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 	.about-and-contact {

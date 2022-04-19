@@ -23,8 +23,8 @@ export default function ProjectPage() {
 	return isLoading ? (
 		<p>"Loading" </p>
 	) : (
-		<>
-			<div className="project-page-intro">
+		<div className="project-page">
+			<div className="intro">
 				<h1>Projects</h1>
 				<p>
 					Here you can view some projects that I have completed, this page uses
@@ -41,6 +41,6 @@ export default function ProjectPage() {
 					);
 				})}
 			</div>
-		</>
+		</div>
 	);
 }
