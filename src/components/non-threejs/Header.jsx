@@ -15,7 +15,7 @@ export default function Header() {
 						navClicked ? setNavClicked(false) : setNavClicked(true);
 						setTimeout(() => {
 							setNavClicked(false);
-						}, 1000);
+						}, 2500);
 					}}
 				>
 					☰
@@ -26,6 +26,9 @@ export default function Header() {
 
 				<section
 					className="hamburger-menu-content"
+					onMouseMove={() => {
+						setNavClicked(true);
+					}}
 					onMouseLeave={() => {
 						setNavClicked(false);
 					}}
