@@ -6,7 +6,7 @@ export default function AboutandContact() {
 		<div className="about-and-contact">
 			<About />
 			<img
-				src={require("../../images/liam-pic.jpg")}
+				src={require("../../resources/liam-pic.jpg")}
 				alt="liam-headshot"
 				className="liam-headshot"
 			></img>
