@@ -33,24 +33,25 @@ export const ThreeJS = () => {
         </Canvas>
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col gap-6 rounded-3xl border border-border/30 bg-card/70 p-8 text-center backdrop-blur lg:text-left">
-        <h1 className="font-display text-4xl uppercase leading-tight tracking-[0.2em] text-body sm:text-5xl">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center gap-4 px-4 text-center">
+        <div className="h-px w-1/2 max-w-md bg-border" />
+        <h1 className="font-display text-5xl uppercase tracking-[0.3em] text-body">
           Liam Curran
         </h1>
-        <p className="text-lg text-body/80">Software Developer</p>
-        <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-          <Link to="/aboutandcontact" className="retro-button">
-            Enter
-          </Link>
-          <button
-            type="button"
-            className="retro-button"
-            onClick={randomizeColors}
-          >
-            Click Me!
-          </button>
-        </div>
+        <p className="font-display text-xl uppercase tracking-[0.4em] text-body">
+          Software Developer
+        </p>
+        <Link to="/aboutandcontact" className="retro-button mt-2 px-6">
+          Enter
+        </Link>
       </div>
+      <button
+        type="button"
+        onClick={randomizeColors}
+        className="retro-button absolute bottom-6 left-6 z-10 px-4"
+      >
+        Click Me
+      </button>
     </section>
   );
 };
