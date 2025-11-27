@@ -1,6 +1,11 @@
-import { Torus } from "./torus.jsx";
+import { Torus } from "./Torus";
+import type { ColorPalette } from "./types";
 
-export function Geometry({ colors }) {
+type GeometryProps = {
+  colors: ColorPalette;
+};
+
+export const Geometry = ({ colors }: GeometryProps) => {
   return (
     <group>
       <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -2, 0]}>
@@ -21,7 +26,7 @@ export function Geometry({ colors }) {
         args={[0.75, 0.3, 30, 150]}
         speed={0.6}
         factor={6}
-        wireframe={true}
+        wireframe
       />
       <Torus
         position={[-3, 1, 0]}
@@ -29,8 +34,8 @@ export function Geometry({ colors }) {
         args={[0.75, 0.3, 30, 150]}
         speed={0.6}
         factor={6}
-        wireframe={true}
+        wireframe
       />
     </group>
   );
-}
+};
